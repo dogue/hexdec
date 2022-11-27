@@ -13,5 +13,7 @@ Usage: dchx <number>";
 
     if let Ok(number) = args[1].parse::<usize>() {
         println!("{:X}", number);
+    } else {
+        println!("{}\n", help);
     }
 }
