@@ -13,5 +13,7 @@ Usage: hxdc <number>";
 
     if let Ok(number) = usize::from_str_radix(&args[1], 16) {
         println!("{}", number);
+    } else {
+        println!("{}\n", help);
     }
 }
